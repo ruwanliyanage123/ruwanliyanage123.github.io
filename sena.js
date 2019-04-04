@@ -15,3 +15,22 @@ sky.src       = "images/background.png";
 paddy.src     = "images/fg.png";
 bambo.src     = "images/up.png";
 
+/**
+ * this part for the patrameter estimation for the game
+ */
+ var gap       = 300;
+ var constant;
+ var bX        = 10;
+ var bY        = 150;
+ var gravity   = 1.5;
+ var score     = 0;
+
+ /**
+  * this function for get the keyboard commands 
+  */
+ document.addEventListener("keydown", moveUp);
+
+ function moveUp(){
+     bY -=25;
+     fly.play();
+ }
